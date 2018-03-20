@@ -4,7 +4,7 @@ I took 60,000 training cases and 10,000 test cases.
 I performed classification, clustering, dimensionality reduction and embedding. At best, SVM achieved an 1.8% error rate.
 
  
-####Classification
+1. CLASSIFICATION:
 
 By running  ```svm_mnist.py``` we run the SVM classification code.
 The code first loads the dataset via its helper function provided by sklearn. 
@@ -24,13 +24,13 @@ After dimensionality reduction, we perform SVM with various kernels and hyperpar
 
 
 
-####Dimensionality Reduction
+2. REDUCING DIMENSIONS:
 
 By running  ```kpca_mnist.py``` we run the lda + kernelPCA code. With the new reduced dimensions, we perform kNN and NearestCentroid.
 Please note that kPCA is a memory intensive process, so we limit our training set to 15.000 samples.
 
 
-####Embedding Projections & Clustering
+3. EMBEDDING PROJECTIONS AND CLUSTERING:
 
 Finally, we run  ```cluster_mnist.py``` in order to project our dataset in the two-dimensional space, leveraging Spectral and
 Isomap embeddings. By keeping 5000 samples for visualization, we perform spectral clustering. To evaluate the 
